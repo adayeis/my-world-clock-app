@@ -9,10 +9,43 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <footer>
-        <p>Coded by 👩🏻‍💻 Ada Yeis</p>
-        <p>Open-source on Github and hosted on Netlify</p>
-      </footer>
+      <select name="cities" id="city">
+        <option value="">Select a city...</option>
+        <option value="local">local</option>
+        <option value="istanbul">Istanbul</option>
+        <option value="los-angeles">Los Angeles</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+      </select>
+      <section class="clock-container">
+        <ol class="viewport">
+          <li class="slide">
+            <div class="snapper">
+              <h2>Istanbul</h2>
+              <p class="date">August 15th 2023</p>
+              <h3 class="time">1:48:15 AM</h3>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="snapper">
+              <h2>Istanbul</h2>
+              <p class="date">August 15th 2023</p>
+              <h3 class="time">1:48:15 AM</h3>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="snapper">
+              <h2>Istanbul</h2>
+              <p class="date">August 15th 2023</p>
+              <h3 class="time">1:48:15 AM</h3>
+            </div>
+          </li>
+        </ol>
+      </section>
     </div>
+    <footer>
+      <p>Coded by 👩🏻‍💻 Ada Yeis</p>
+      <p>Open-source on Github and hosted on Netlify</p>
+    </footer>
   </body>
 </html>
