@@ -67,8 +67,10 @@ function showCityTime(event) {
             <h2>${cityName}</h2>
             <p class="date">${cityTime.format("MMMM Do YYYY")}</p>
             <h3 class="time">${cityTime.format("hh:mm:ss")}</h3>
+             <a href="/" class="back-link">Go back</a>
         </div>
-    </li>`;
+    </li>
+   `;
 }
 
 let citySelectElement = document.querySelector("#city");
