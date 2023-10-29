@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -20,38 +22,39 @@
       <section class="clock-carousel">
         <ol class="viewport">
           <li class="slide">
-            <div class="snapper">
-              <h2>Istanbul</h2>
-              <p class="date">August 15th 2023</p>
-              <h3 class="time">1:48:15</h3>
+            <div class="snapper" id="new-york">
+              <h2>New York</h2>
+              <p class="date"></p>
+              <h3 class="time"></h3>
             </div>
           </li>
           <li class="slide">
-            <div class="snapper">
-              <h2>Los Angeles</h2>
-              <p class="date">August 15th 2023</p>
-              <h3 class="time">15:48:15</h3>
+            <div class="snapper" id="istanbul">
+              <h2>Istanbul</h2>
+              <p class="date"></p>
+              <h3 class="time"></h3>
+            </div>
+          </li>
+
+          <li class="slide">
+            <div class="snapper" id="zurich">
+              <h2>Zurich</h2>
+              <p class="date"></p>
+              <h3 class="time"></h3>
             </div>
           </li>
           <li class="slide">
-            <div class="snapper">
-              <h2>Istanbul</h2>
-              <p class="date">August 15th 2023</p>
-              <h3 class="time">1:48:15</h3>
+            <div class="snapper" id="sydney">
+              <h2>Sydney</h2>
+              <p class="date"></p>
+              <h3 class="time"></h3>
             </div>
           </li>
           <li class="slide">
-            <div class="snapper">
-              <h2>Istanbul</h2>
-              <p class="date">August 15th 2023</p>
-              <h3 class="time">1:48:15</h3>
-            </div>
-          </li>
-          <li class="slide">
-            <div class="snapper">
-              <h2>Istanbul</h2>
-              <p class="date">August 15th 2023</p>
-              <h3 class="time">1:48:15</h3>
+            <div class="snapper" id="tokyo">
+              <h2>Tokyo</h2>
+              <p class="date"></p>
+              <h3 class="time"></h3>
             </div>
           </li>
         </ol>
@@ -70,5 +73,6 @@
         >
       </p>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
