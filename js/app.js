@@ -54,6 +54,8 @@ displayTime();
 setInterval(displayTime, 1000);
 
 function showCityTime(event) {
+  let backLinkElement = document.querySelector("#back-link");
+  backLinkElement.innerHTML = `Go back`;
   intervalId = setInterval(() => {
     let cityTimeZone = event.target.value;
     if (cityTimeZone === "current") {
@@ -68,7 +70,6 @@ function showCityTime(event) {
             <h2>${cityName}</h2>
             <p class="date">${cityTime.format("MMMM Do YYYY")}</p>
             <h3 class="time">${cityTime.format("HH:mm:ss")}</h3>
-             <a href="/" class="back-link">Go back</a>
         </div>
     </li>
    `;
